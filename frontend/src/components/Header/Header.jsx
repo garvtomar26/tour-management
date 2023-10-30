@@ -41,6 +41,7 @@ const Header = () => {
                   </li>
                 ))}
             </ul>
+            
           </div>
           {/*================== MENU END ================ */ }
           <div className="nav__right d-felx align-items-center gap-4">
@@ -48,10 +49,11 @@ const Header = () => {
                 <Button className='btn secondary__btn'><Link to='/login'>Login</Link></Button>
                 <Button className='btn primary__btn'><Link to='/register'>Register</Link></Button>
             </div>
+           
           </div>
           <span className="mobile__menu">
               <i class="ri-menu-line"></i>
-            </span>
+          </span>
         </div>
       </Row>
     </Container>
