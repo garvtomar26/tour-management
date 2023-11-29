@@ -9,7 +9,7 @@ const TourCard = ({tour}) => {
   const {id, title, photo, city, price, featured, reviews} = tour;
 
   const { totalRating, avgRating } = calculateAvgRating(reviews)
-  
+
   return (
     <div className="tour__card">
       <Card>
