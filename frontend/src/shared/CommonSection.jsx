@@ -2,13 +2,13 @@ import React from 'react';
 import './common-section.css';
 import { Container, Row, Col } from 'reactstrap';
 
-const CommonSection = () => {
+const CommonSection = ({ title }) => {
   return (
     <section className="commonsection">
         <Container>
             <Row>
                 <Col lg='12'>
-                    <h1> {title} </h1>
+                    <h1>{title}</h1>
                 </Col>
             </Row>
         </Container>
