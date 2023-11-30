@@ -46,8 +46,21 @@ export const updateTour = async (req, res) => {
 };
 // delete tour
 export const deleteTour = async (req, res) => {
+  const id = req.params.id;
+
   try {
-  } catch (err) {}
+    const deletedTour = await Tour.findByIdAndDelete(id);
+
+    res.status(200).json({
+      success: true,
+      message: "Successfully Deleted",
+    });
+  } catch (err) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to Delete",
+    });
+  }
 };
 // getSingle tour
 export const getSingleTour = async (req, res) => {
